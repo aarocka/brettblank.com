@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
 
-  </head>
-  <body>
+<head>
+
+</head>
+
+<body>
     <h1>U JUST GOT TROLLED</h1>
     <script>
-      function redirect() {
-	// Define the list of domains as a JSON object
-	const domains = {
-		"domain1": "https://www.youtube.com/watch?v=93_t7T95bAY",
-		"domain2": "https://www.youtube.com/watch?v=oavMtUWDBTM",
-		"domain3": "https://www.youtube.com/watch?v=ZZ5LpwO-An4",
-    		"domain4": "https://www.youtube.com/watch?v=oHg5SJYRHA0",
-		"domain5": "https://www.youtube.com/watch?v=93_t7T95bAY",
-		"domain6": "https://www.youtube.com/watch?v=93_t7T95bAY",
-		"domain7": "https://www.youtube.com/watch?v=FveF-we6lcE"
-	};
-
-	// Generate a random index based on the number of domains
-	const randomIndex = Math.floor(Math.random() * Object.keys(domains).length);
-
-	// Get a random domain from the JSON object using the random index
-	const randomDomain = domains[Object.keys(domains)[randomIndex]];
-
-	// Redirect the user to the random domain
-	window.location.href = randomDomain;
-}
-      redirect();
+        function redirect() {
+    	// Define the list of domains as a JSON object
+    	const domains = {
+    		"domain1": "https://www.youtube.com/watch?v=93_t7T95bAY",
+    		"domain2": "https://www.youtube.com/watch?v=oavMtUWDBTM",
+    		"domain3": "https://www.youtube.com/watch?v=ZZ5LpwO-An4",
+        		"domain4": "https://www.youtube.com/watch?v=oHg5SJYRHA0",
+    		"domain5": "https://www.youtube.com/watch?v=93_t7T95bAY",
+    		"domain6": "https://www.youtube.com/watch?v=93_t7T95bAY",
+    		"domain7": "https://www.youtube.com/watch?v=FveF-we6lcE"
+    	};
+    
+    	// Generate a random index based on the number of domains
+    	const randomIndex = Math.floor(Math.random() * Object.keys(domains).length);
+    
+    	// Get a random domain from the JSON object using the random index
+    	const randomDomain = domains[Object.keys(domains)[randomIndex]];
+    
+    	// Redirect the user to the random domain
+    	window.location.href = randomDomain;
+    	}
+       	redirect();
     </script>
-  </body>
+</body>
+
 </html>
